@@ -1,0 +1,20 @@
+language: python
+sudo: true
+matrix:
+  include:
+  - python: 3.7
+    env: TOXENV=py37
+  fast_finish: true
+install:
+- apt-cache depends python-pycurl
+- sudo apt-get install libcurl4-gnutls-dev libgnutls-dev curl
+- sudo apt-get install -y gnutls-bin
+- curl ifconfig.co
+- pip install Django requests wheel -U pip
+script:
+- python manage.py test
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: Z+EUNgaAKSIo1dQQHDgnuN0K9PCv90Kj1OdE/RN/ZRqbY/vREZkDBCP+2iTl85CeayOt41QxoR3xRFT9AzfdU9x811/oVN0RfIJHRd76fltbZCQ+vBZzYeuhCy/DguYWlS603ucFpCuALJ/0RH3Cny1fhXnGm2acjGu7qz3sS8sL+GnA9XjNPamnWKxbQSZqKJFDO/r99Krj9ZMAf7/cw/eXCREVhN6CUHI4bpbVcgn1ZBbqVPBGL+R1ZpQsQ2TZvDirehSpjV7vH50fSetcK5SUa3+buofg8dg5Os8Vfi1/6FyGxwgJRkHnemHWHaVQpM74QogBHnx8XFZ5V9SaZsUiS9Pw8gX4+16WOqivCbSppRNgYtfMg8IyrVvW5DqbA5am7x+TX23YT1P+6rs9gAnRrynntxj9skWdj72HYiKHlN/bX5L50fn8/4OWK50WtsuRZ1kotBjbmap/UWDsmvGn4ZxLxNaaCsk/5cXsnhpySaMYLf7ugnydgQECIwIBBCx/R7iiOOdBnF1tKlh3R5ggqkg+K7g6mlD2s+4ZRVW0KnaIEsCCcqS2kf7BWsB7LEGmdphEIe6eQXl+0OHvBp63nZWWjlBBv/2oWM3u4oDw/H5uGCmJLyh+vVSUba1uBKTwVcQq93UN6XAUkaTE1vvxF8gD8uuqU8fpaaDlVJw=
