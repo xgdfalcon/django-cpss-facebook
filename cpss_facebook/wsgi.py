@@ -19,6 +19,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'facebook-django.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cpss_facebook.settings')
 
 application = get_wsgi_application()

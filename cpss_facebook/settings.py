@@ -40,7 +40,7 @@ ALLOWED_HOSTS = [ '127.0.0.1', 'localhost' ]
 # Application definition
 
 INSTALLED_APPS = [
-    'facebook-django.apps.CPSSFacebookConfig',
+    'cpss_facebook.apps.CPSSFacebookConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.sites',
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# ROOT_URLCONF = 'facebook-django.urls'
+# ROOT_URLCONF = 'cpss_facebook.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'facebook-django.wsgi.application'
+WSGI_APPLICATION = 'cpss_facebook.wsgi.application'
 
 
 # Database

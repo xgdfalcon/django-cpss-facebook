@@ -1,7 +1,7 @@
 > ## 🛠 Status: In Development
 > django-cpss-facebook currently in development.
 
-# Python Facebook API - Django  [<img src="https://github.com/xgdfalcon/django-cpss-facebook/blob/master/facebook-django/static/cpss/logo.png?raw=true" alt="CPSS by XGDFalcon®" height="20px" />](https://controlpointsw.com) 
+# Python Facebook API - Django  [<img src="https://github.com/xgdfalcon/django-cpss-facebook/blob/master/cpss_facebook/static/cpss/logo.png?raw=true" alt="CPSS by XGDFalcon®" height="20px" />](https://controlpointsw.com) 
 
 [![Build Status](https://travis-ci.org/xgdfalcon/django-cpss-facebook.svg?branch=master)](https://travis-ci.org/xgdfalcon/django-cpss-facebook)
 [![PyPI version](https://badge.fury.io/py/django-cpss-facebook.svg)](https://badge.fury.io/py/django-cpss-facebook)
@@ -27,7 +27,7 @@ Project documentation is available at TBP.
 ```
     INSTALLED_APPS = [
         ...
-        'facebook-django.CPSSFacebookConfig',
+        'cpss_facebook.CPSSFacebookConfig',
     ]
 ```
 2. Run `python manage.py migrate` to create the django-cpss-facebook models.

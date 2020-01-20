@@ -13,8 +13,4 @@ This python module provides...
 Written by Larry Latouf (xgdfalcon@gmail.com)
 """
 
-from django.apps import AppConfig
-
-class CPSSFacebookConfig(AppConfig):
-    name = 'facebook-django'
-    verbose_name = "CPSS Facebook - Django"
+__version__ = '1.1.0'
