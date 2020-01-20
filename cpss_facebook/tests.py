@@ -15,7 +15,7 @@ Written by Larry Latouf (xgdfalcon@gmail.com)
 
 from django.test import TestCase
 from django.test.client import RequestFactory
-from .models.client import FacebookClientOption
+from cpss_facebook.models import FacebookClientOption
 from datetime import datetime
 import os
 

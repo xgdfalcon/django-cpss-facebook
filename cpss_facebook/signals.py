@@ -17,6 +17,6 @@ from django.db.models import signals
 from django.dispatch import dispatcher
 
 def generate_longterm(sender, instance, signal, *args, **kwargs):
-  from .models.client import FacebookClientOption
+  from cpss_facebook.models import FacebookClientOption
   for client in FacebookClientOption.objects.all():
     client.generate_longterm()

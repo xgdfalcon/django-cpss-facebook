@@ -20,7 +20,7 @@ from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from django.contrib import admin
 
-from .models.client import FacebookClientOption
+from cpss_facebook.models import FacebookClientOption
 
 @admin.register(FacebookClientOption)
 class FacebookClientAdmin(admin.ModelAdmin):

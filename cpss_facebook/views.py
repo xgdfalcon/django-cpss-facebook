@@ -17,7 +17,7 @@ Written by Larry Latouf (xgdfalcon@gmail.com)
 # from django.http import HttpResponse, HttpResponseRedirect
 # from django.template import loader
 # from django.contrib.auth.decorators import login_required
-# from .models.client import FacebookClientOption
+# from cpss_facebook.models import FacebookClientOption
 
 # @login_required
 # def post_to_page(request, page_id, content):
