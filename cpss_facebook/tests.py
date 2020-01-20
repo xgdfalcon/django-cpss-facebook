@@ -42,6 +42,7 @@ class FacebookDjangoTestCase(TestCase):
         result = collection.get_page_events()
         print(result)
 
+    """
     def test_post_status(self):
         collection = FacebookClientOption.objects.get(facebook_page_id=FACEBOOK_PAGE_ID)
         now = datetime.now()
@@ -56,6 +57,7 @@ class FacebookDjangoTestCase(TestCase):
         result = collection.post_link_to_page(dt_string + " - " + CONTENT, LINK_CONTENT)
         print(result)
 
+    """
     def test_get_page_posts(self):
         collection = FacebookClientOption.objects.get(facebook_page_id=FACEBOOK_PAGE_ID)
         result = collection.get_page_posts()
